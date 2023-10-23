@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+    <style>
+        body {
+            background-color: #fdfd96;
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+        }
+
+        form.block{
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .inline {
+            display: inline-block;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .submit-button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="/show_details" class="block">
+        <button class="btn info">Past Queries</button>
+    </form>
+
+    <form action="/weather" method="POST">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude" name="latitude"><br><br>
+
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude" name="longitude"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+</html>
+
